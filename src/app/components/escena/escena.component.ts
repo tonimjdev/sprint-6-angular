@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FrasesInterface } from '../../interface/frases.interface';
 
 @Component({
   selector: 'app-escena',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent implements OnInit {
+
+  @Input() frasesEscena: FrasesInterface[] = [];
+
 
   constructor() { }
 
