@@ -1,6 +1,10 @@
 
 .container {
-    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
 }

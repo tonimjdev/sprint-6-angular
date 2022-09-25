@@ -6,3 +6,25 @@
     border-radius: 30px;
 
 }
+.activo {
+    background-color: rgb(254,193,204);
+}
+
+.noActivo {
+    background-color: rgba(255, 255, 255, 0.355);
+}
+.botonesContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+button {
+    width:600px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+}
+button:hover {
+    cursor: pointer;
+}

@@ -1,2 +1,13 @@
 
-<p class= "frases" *ngFor="let frase of frasesEscena">{{frase.text}}</p>
+<div class="botonesContainer">
+<button (click)="prev()">Anterior</button>
+<button (click)="next()">Següent</button>
+</div>
+
+<p
+  class="frases"
+  *ngFor="let frase of frasesEscena; let i = index"
+  [ngClass]="currentSentence == i ? 'activo' : 'noActivo'"
+>
+  {{ frase.text }}
+</p>
