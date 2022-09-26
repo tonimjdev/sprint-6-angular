@@ -1,0 +1,16 @@
+button {
+    width:200px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.8em;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+button:hover {
+    cursor: pointer;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

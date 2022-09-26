@@ -1,2 +1,10 @@
+<div class="container2" *ngIf="!showFrases">
 
-<app-escena [frasesEscena]="frasesHome"></app-escena>
+<p>Benvingut!<br>Aquesta web és un tutorial, en el qual, mitjançant dos botons pots
+    avançar o retrocedir en els consells, modificant-se  el text d'ajuda i la imatge de fons.</p>
+
+<button (click)="show()">Comença</button>
+
+</div>
+
+<app-escena *ngIf="showFrases" [frasesEscena]="frasesHome"></app-escena>

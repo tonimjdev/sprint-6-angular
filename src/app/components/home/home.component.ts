@@ -11,6 +11,12 @@ export class HomeComponent implements OnInit {
 
   @Input() frasesHome: FrasesInterface[] = frasesJson;
 
+  showFrases:boolean = false;
+
+  show() {
+    this.showFrases = !this.showFrases;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
