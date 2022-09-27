@@ -1,3 +1,4 @@
 export interface FrasesInterface {
-    text: string;
+    txt: string;
+    img: string;
 }

@@ -28,3 +28,7 @@ button {
 button:hover {
     cursor: pointer;
 }
+.imagenFondo {
+padding:0;
+margin:0;
+}

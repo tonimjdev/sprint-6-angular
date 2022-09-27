@@ -8,9 +8,10 @@ button {
 button:hover {
     cursor: pointer;
 }
-.container2 {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }

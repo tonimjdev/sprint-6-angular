@@ -1,13 +1,18 @@
+<div class="imagenFondo" 
+ style="background-image: url(../../../assets/{{frasesEscena[currentSentence].img}});
+        background-repeat: no-repeat;
+        background-size: cover;">
 
 <div class="botonesContainer">
 <button (click)="prev()">Anterior</button>
 <button (click)="next()">Següent</button>
 </div>
-
 <p
   class="frases"
   *ngFor="let frase of frasesEscena; let i = index"
   [ngClass]="currentSentence == i ? 'activo' : 'noActivo'"
 >
-  {{ frase.text }}
+  {{ frase.txt }}
+
 </p>
+</div>

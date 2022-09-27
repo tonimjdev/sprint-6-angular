@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FrasesInterface } from '../../interface/frases.interface';
 
 @Component({
@@ -8,6 +8,7 @@ import { FrasesInterface } from '../../interface/frases.interface';
 })
 export class EscenaComponent implements OnInit {
   @Input() frasesEscena: FrasesInterface[] = [];
+  
 
   currentSentence: number = 0;
 
