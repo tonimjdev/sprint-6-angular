@@ -1,18 +1,21 @@
-<div class="imagenFondo" 
- style="background-image: url(../../../assets/{{frasesEscena[currentSentence].img}});
+<!-- Creem div per triar la imatge del fons segons la posició del "currentSentence" -->
+<div style="background-image: url(../../../assets/{{frasesEscena[currentSentence].img}});
         background-repeat: no-repeat;
-        background-size: cover;">
-
+        background-size: cover;
+        padding: 2em;
+        max-width: 100%;
+        height: 100vh;
+        background-position: center">
 <div class="botonesContainer">
 <button (click)="prev()">Anterior</button>
 <button (click)="next()">Següent</button>
 </div>
+<!-- Recorrem array de frases amb bucle *ngFor i apliquem classe segons condicional ternari per marcar el color -->
 <p
   class="frases"
   *ngFor="let frase of frasesEscena; let i = index"
   [ngClass]="currentSentence == i ? 'activo' : 'noActivo'"
 >
   {{ frase.txt }}
-
 </p>
 </div>
